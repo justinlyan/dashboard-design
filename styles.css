@@ -1,0 +1,25 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template: 150px 5fr / 300px 4fr;
+  grid-template-areas: 
+    "sidebar header"
+    "sidebar main-content";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main-content;
+}
