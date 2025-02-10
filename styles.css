@@ -29,19 +29,23 @@ html {
   background: rgb(33, 128, 220);
 }
 
+h1 {
+  color: white;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
 }
 
 li a {
-  /* width: 100%; */
   display: block;
   text-decoration: none;
+  line-height: 3rem;
 }
 
 li a:hover {
-  background-color: white;
+  background-color: black;
 }
 
 li a:visited {
@@ -56,14 +60,47 @@ li a:visited {
 .header-top,
 .header-bot {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  display: flex;
+  width: 70%;
 }
 
 input {
   border-radius: 10px;
   padding: 5px;
-  width: 300px;
+  width: 70%;
   background-color: rgb(230, 230, 230);
   border: none;
+}
+
+.profile-sml,
+.profile-lg {
+  display: flex;
+}
+
+.profile-sml {
+  width: 30%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  border: 1px black solid;
+}
+
+.profile-pic-lg {
+  height: 4rem;
+  width: 4rem;
+}
+
+.profile-pic-sml {
+  height: 2rem;
+  width: 2rem;
 }
 
 .main {
@@ -78,6 +115,10 @@ input {
 
 .projects-section {
   grid-area: projects;
+}
+
+.card-btns {
+  text-align: right;
 }
 
 .announcements-section {
