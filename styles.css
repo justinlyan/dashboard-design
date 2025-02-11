@@ -189,7 +189,7 @@ input {
   background-color: rgb(229, 229, 229);
   grid-area: main-content;
   display: grid;
-  grid-template: 1fr 1fr / 3fr 1fr;
+  grid-template: 1fr 1fr / 1fr 300px;
   grid-template-areas: 
     "projects announcements"
     "projects trending"
@@ -271,4 +271,15 @@ hr {
 .trending {
   background-color: white;
   border-radius: 10px
+}
+
+.trending-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.trending-desc {
+  font-size: 0.85em;
+  padding-left: 10px;
 }
