@@ -206,18 +206,17 @@ h2 {
 
 .projects-section {
   grid-area: projects;
+  padding-left: 15px;
 }
 
 .announcements-section {
   grid-area: announcements;
+  padding-right: 15px;
 }
 
 .trending-section {
   grid-area: trending;
-}
-
-.projects-section {
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .projects {
@@ -258,6 +257,15 @@ h2 {
 .announcements {
   background-color: white;
   border-radius: 10px;
+  font-size: 0.85em;
+}
+
+.announcement-card {
+  padding: 20px;
+}
+
+hr {
+  width: 80%;
 }
 
 .trending {
