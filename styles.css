@@ -1,3 +1,5 @@
+/* === GLOBAL === */
+
 @font-face {
   font-family: Roboto-variable;
   src: url(./assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
@@ -10,19 +12,16 @@ html {
   font-family: Roboto-variable;
 }
 
-.icon {
-  width: 1em;
-  height: auto;
-}
-
 .container {
   height: 100vh;
   display: grid;
-  grid-template: 150px 5fr / minmax(200px, 1fr) 4fr;
+  grid-template: 150px 5fr / 250px 4fr;
   grid-template-areas: 
     "sidebar header"
     "sidebar main-content";
 }
+
+/* === SIDEBAR === */
 
 .sidebar {
   grid-area: sidebar;
@@ -38,6 +37,7 @@ ul {
   list-style-type: none;
   padding: 0;
   font-weight: 800;
+  padding-top: 25px;
 }
 
 h1 > i {
@@ -70,9 +70,11 @@ li a:visited {
   color: white;
 }
 
+/* === HEADER === */
+
 .header {
   grid-area: header;
-  
+  padding: 1rem 2rem;
 }
 
 .header-top,
@@ -82,9 +84,22 @@ li a:visited {
   justify-content: space-between;
 }
 
+.header-bot {
+  padding-top: 1rem;
+}
+
 .search-bar {
   display: flex;
+  align-items: center;;
   width: 70%;
+}
+
+.search-bar > i {
+  padding-right: 1rem;
+}
+
+.search-bar input {
+  padding-left: 2rem;
 }
 
 input {
@@ -103,7 +118,26 @@ input {
 .profile-sml {
   width: 30%;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: right;
+}
+
+.profile-sml > * {
+  margin-left: 20px;
+}
+
+.profile-sml i {
+  font-size: 1.3rem;
+}
+
+.profile-lg-desc {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  justify-content: center;
+}
+
+.profile-lg p {
+  margin: 0;
 }
 
 .profile-pic {
@@ -120,6 +154,36 @@ input {
   height: 2rem;
   width: 2rem;
 }
+
+.intro {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.button-options {
+  width: 30%;
+  display: flex;
+  justify-content: right;
+}
+
+.button-options button {
+  font-weight: 550;
+  color: white;
+  background-color: rgb(33, 128, 220);
+  padding: 8px;
+  border-radius: 20px;
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  margin-left: 20px;
+}
+
+/* === MAIN CONTENT === */
 
 .main {
   background-color: rgb(241, 241, 241);
