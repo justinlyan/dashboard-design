@@ -151,8 +151,8 @@ input {
 }
 
 .profile-pic-sml {
-  height: 2rem;
-  width: 2rem;
+  height: 2.3rem;
+  width: 2.3rem;
 }
 
 .intro {
@@ -186,7 +186,7 @@ input {
 /* === MAIN CONTENT === */
 
 .main {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(229, 229, 229);
   grid-area: main-content;
   display: grid;
   grid-template: 1fr 1fr / 3fr 1fr;
@@ -195,12 +195,17 @@ input {
     "projects trending"
 }
 
-.projects-section {
-  grid-area: projects;
+h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
-.card-btns {
-  text-align: right;
+.main p {
+  margin: 0;
+}
+
+.projects-section {
+  grid-area: projects;
 }
 
 .announcements-section {
@@ -211,6 +216,10 @@ input {
   grid-area: trending;
 }
 
+.projects-section {
+  padding-left: 15px;
+}
+
 .projects {
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(2, 1fr);
@@ -219,9 +228,31 @@ input {
 .project-card {
   background-color: white;
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
   border-left: 5px solid orange;
+  padding: 30px 10px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: 1.3em 1fr 1.5em;
+
+}
+
+.card-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.card-desc {
+  font-size: 0.9em;
+}
+
+.card-btns {
+  display: flex;
+  justify-content: right;
+}
+
+.card-btns > * {
+  padding: 30px 10px 0px 10px;
 }
 
 .announcements {
